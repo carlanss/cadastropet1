@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Lista de Contatos";
+}
+<div class="text-center">
+    </div>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+    
+        <a class="btn btn-success" role="button" asp-controller="Contato" asp-action="Criar">Criar Pet</a>
+    </div>
+    <br/>
+    
+
+
+<h1 class="display-4">Lista de Contatos</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">Telefone</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Carlos santos</td>
+            <td>carloss@gmail.com</td>
+            <td>21 981054154</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-secondary">Exibir</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>                
+             </div>
+            </td>
+            </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Mariana freitas</td>
+            <td>marianaf@gmail.com</td>
+            <td>21 985474569</td>
+            <td>
+                <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                        <a role="button" class="btn btn-secondary">Exibir</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a> 
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Tinoco souza</td>
+            <td>tinocos@gmail.com</td>
+            <td>21 987745645</td>
+            <td>
+                <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-secondary">Exibir</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a> 
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
